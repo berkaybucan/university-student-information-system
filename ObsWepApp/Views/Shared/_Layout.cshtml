@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ObsWepApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ObsWepApp.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/next-sidebar.css" />
+    <link rel="stylesheet" href="~/css/perfect-scrollbar.css" />
+</head>
+<body class="app">
+    <header>
+        <div class="sidebar">
+            <div class="sidebar-inner">
+                <div class="sidebar-logo">
+                    <div class="d-flex align-items-center flex-nowrap">
+
+                        <a class="sidebar-link text-decoration-none" href="#">
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="logo-sm">
+
+                                    <div class="logo d-flex align-items-center justify-content-center">
+                                        <img src="/lib/gabem.png" />
+                                    </div>
+
+                                </div>
+                                <div class="logo-text d-flex align-items-center justify-content-center">
+                                    <img src="/lib/gabem.png" />
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <div class="">
+                            <div class="mobile-toggle sidebar-toggle">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="far fa-times-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <ul class="sidebar-menu scrollable position-relative pt-3">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="index.html">
+                            <span class="icon-holder">
+                                <i class="fas fa-home"></i>
+                            </span>
+                            <span class="title">Anasayfa</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fas fa-folder-open"></i>
+                            </span>
+                            <span class="title">Ders İşlemleri</span>
+                            <span class="arrow">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="sidebar-link" href="#">Müfredat</a>
+                            </li>
+                            <li>
+                                <a class="sidebar-link" href="#">Dönem Dersleri</a>
+                            </li>
+                            <li>
+                                <a class="sidebar-link" href="#">Ders Programı</a>
+                            </li>
+                            <li>
+                                <a class="sidebar-link" href="example.html">Ders Kayıt</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect dropdown-toggle" href="#">
+                            <span class="icon-holder">
+                                <i class="fas fa-fingerprint"></i>
+                            </span>
+                            <span class="title">Sınav İşlemleri</span>
+                            <span class="arrow">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="sidebar-link" href="#">Sınav Takvimi</a>
+                            </li>
+                            <li>
+                                <a class="sidebar-link" href="#">Sınav Notları</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">
+                            <span class="icon-holder">
+                                <i class="fas fa-folder-plus"></i>
+                            </span>
+                            <span class="title">Belgeler</span>
+                            <span class="arrow">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="sidebar-link" href="#">Öğrenci Belgesi</a>
+                            </li>
+                            <li>
+                                <a class="sidebar-link" href="#">Transkript</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">
+                            <span class="icon-holder">
+                                <i class="fas fa-folder-open"></i>
+                            </span>
+                            <span class="title">Diğer İşlemler</span>
+                            <span class="arrow">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="sidebar-link" href="#">Özlük Bilgileri</a>
+                            </li>
+                            <li>
+                                <a class="sidebar-link" href="#">Mesajlar</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - GABEM Öğrenci Bilgi Sistemi - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
